@@ -13,10 +13,9 @@ import { WhatsAppButton } from './components/WhatsAppButton';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
       <Navigation />
       <Hero />
-      <Stats />
       <Services />
       <Process />
       <Benefits />

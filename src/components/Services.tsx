@@ -33,20 +33,20 @@ const services = [
 
 export function Services() {
   return (
-    <section id="servicios" className="py-24 bg-white relative overflow-hidden">
+    <section id="servicios" className="py-24 bg-white dark:bg-gray-900 relative overflow-hidden">
       {/* Decorative Elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-blue-100/50 rounded-full blur-3xl -z-0 animate-pulse-slow" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-100/50 rounded-full blur-3xl -z-0 animate-pulse-slow" style={{ animationDelay: '2s' }} />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-blue-100/50 dark:bg-blue-900/20 rounded-full blur-3xl -z-0 animate-pulse-slow" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-100/50 dark:bg-purple-900/20 rounded-full blur-3xl -z-0 animate-pulse-slow" style={{ animationDelay: '2s' }} />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-16 animate-fade-in-up">
-          <div className="inline-flex items-center gap-2 bg-blue-100 px-4 py-2 rounded-full mb-4">
-            <span className="text-blue-600">Nuestros Servicios</span>
+          <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 px-4 py-2 rounded-full mb-4">
+            <span className="text-blue-600 dark:text-blue-400">Nuestros Servicios</span>
           </div>
-          <h2 className="text-gray-900 mb-6">
+          <h2 className="text-gray-900 dark:text-white mb-6">
             Soluciones Integrales Para Tu Salud
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Combinamos experiencia profesional con atención personalizada para ofrecer tratamientos efectivos
           </p>
         </div>
@@ -55,7 +55,7 @@ export function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="group relative bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-transparent overflow-hidden hover-lift animate-fade-in-up"
+              className="group relative bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-700 hover:border-transparent overflow-hidden hover-lift animate-fade-in-up"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Gradient Background on Hover */}
@@ -66,19 +66,19 @@ export function Services() {
                   <service.icon className="w-10 h-10 text-white" />
                 </div>
                 
-                <h3 className="text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">{service.title}</h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
+                <h3 className="text-gray-900 dark:text-white mb-4 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">{service.title}</h3>
+                <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">{service.description}</p>
                 
                 <ul className="space-y-3 mb-6">
                   {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center gap-3 text-gray-700 group/item hover:translate-x-2 transition-transform duration-300">
+                    <li key={idx} className="flex items-center gap-3 text-gray-700 dark:text-gray-300 group/item hover:translate-x-2 transition-transform duration-300">
                       <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${service.color}`} />
                       {feature}
                     </li>
                   ))}
                 </ul>
                 
-                <button className="inline-flex items-center gap-2 text-blue-600 group-hover:gap-4 transition-all duration-300">
+                <button className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 group-hover:gap-4 transition-all duration-300">
                   <span>Más información</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
