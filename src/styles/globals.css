@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-border: #e5e7eb;
+  --color-background: #ffffff;
+  --color-foreground: #171717;
+}
+
 @layer base {
   * {
     @apply border-border;
@@ -9,6 +17,15 @@
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
+
+  /* Dark mode styles */
+  .dark {
+    --color-border: #374151;
+    --color-background: #111827;
+    --color-foreground: #f9fafb;
+    color-scheme: dark;
+  }
+  
 }
 
 /* Animations */

@@ -26,32 +26,32 @@ const benefits = [
 
 export function Benefits() {
   return (
-    <section id="nosotros" className="py-24 bg-white">
+    <section id="nosotros" className="py-24 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="order-2 lg:order-1">
-            <div className="inline-flex items-center gap-2 bg-blue-100 px-4 py-2 rounded-full mb-6">
-              <span className="text-blue-600">Por Qué Elegirnos</span>
+            <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 px-4 py-2 rounded-full mb-6">
+              <span className="text-blue-600 dark:text-blue-400">Por Qué Elegirnos</span>
             </div>
             
-            <h2 className="text-gray-900 mb-6">
+            <h2 className="text-gray-900 dark:text-white mb-6">
               Excelencia en Cada Tratamiento
             </h2>
             
-            <p className="text-xl text-gray-600 mb-10 leading-relaxed">
+            <p className="text-xl text-gray-600 dark:text-gray-300 mb-10 leading-relaxed">
               Me comprometo con tu bienestar utilizando las técnicas más avanzadas en fisioterapia y quiropraxia, respaldadas por más de 5 años de experiencia y resultados comprobados.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {benefits.map((benefit, index) => (
                 <div key={index} className="group">
-                  <div className="flex items-start gap-4 p-6 rounded-xl bg-gray-50 hover:bg-blue-50 transition-all duration-300 hover:shadow-lg">
+                  <div className="flex items-start gap-4 p-6 rounded-xl bg-gray-50 dark:bg-gray-800 hover:bg-blue-50 dark:hover:bg-blue-900/30 transition-all duration-300 hover:shadow-lg">
                     <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                       <benefit.icon className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="text-gray-900 mb-2">{benefit.title}</h4>
-                      <p className="text-sm text-gray-600">{benefit.description}</p>
+                      <h4 className="text-gray-900 dark:text-white mb-2">{benefit.title}</h4>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">{benefit.description}</p>
                     </div>
                   </div>
                 </div>
@@ -59,19 +59,19 @@ export function Benefits() {
             </div>
 
             <div className="mt-10 flex flex-wrap gap-4">
-              <div className="flex items-center gap-3 bg-gradient-to-r from-green-50 to-green-100 px-6 py-4 rounded-xl border border-green-200">
-                <CheckCircle2 className="w-6 h-6 text-green-600" />
+              <div className="flex items-center gap-3 bg-gradient-to-r from-green-50 to-green-100 dark:from-green-900/30 dark:to-green-800/30 px-6 py-4 rounded-xl border border-green-200 dark:border-green-700">
+                <CheckCircle2 className="w-6 h-6 text-green-600 dark:text-green-400" />
                 <div>
-                  <div className="text-sm text-green-600">Certificados</div>
-                  <div className="text-gray-900">ISO 9001:2015</div>
+                  <div className="text-sm text-green-600 dark:text-green-400">Certificados</div>
+                  <div className="text-gray-900 dark:text-white">ISO 9001:2015</div>
                 </div>
               </div>
               
-              <div className="flex items-center gap-3 bg-gradient-to-r from-blue-50 to-blue-100 px-6 py-4 rounded-xl border border-blue-200">
-                <Shield className="w-6 h-6 text-blue-600" />
+              <div className="flex items-center gap-3 bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/30 px-6 py-4 rounded-xl border border-blue-200 dark:border-blue-700">
+                <Shield className="w-6 h-6 text-blue-600 dark:text-blue-400" />
                 <div>
-                  <div className="text-sm text-blue-600">Acreditación</div>
-                  <div className="text-gray-900">Nacional</div>
+                  <div className="text-sm text-blue-600 dark:text-blue-400">Acreditación</div>
+                  <div className="text-gray-900 dark:text-white">Nacional</div>
                 </div>
               </div>
             </div>
@@ -86,28 +86,28 @@ export function Benefits() {
               />
               
               {/* Floating Card */}
-              <div className="absolute bottom-8 left-8 right-8 bg-white/95 backdrop-blur-sm p-6 rounded-2xl shadow-xl">
+              <div className="absolute bottom-8 left-8 right-8 bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm p-6 rounded-2xl shadow-xl">
                 <div className="flex items-center justify-between mb-4">
                   <div>
-                    <div className="text-3xl text-gray-900 mb-1">15+</div>
-                    <div className="text-sm text-gray-600">Años de experiencia</div>
+                    <div className="text-3xl text-gray-900 dark:text-white mb-1">15+</div>
+                    <div className="text-sm text-gray-600 dark:text-gray-400">Años de experiencia</div>
                   </div>
-                  <div className="h-12 w-px bg-gray-300" />
+                  <div className="h-12 w-px bg-gray-300 dark:bg-gray-600" />
                   <div>
-                    <div className="text-3xl text-gray-900 mb-1">5K+</div>
-                    <div className="text-sm text-gray-600">Pacientes felices</div>
+                    <div className="text-3xl text-gray-900 dark:text-white mb-1">5K+</div>
+                    <div className="text-sm text-gray-600 dark:text-gray-400">Pacientes felices</div>
                   </div>
-                  <div className="h-12 w-px bg-gray-300" />
+                  <div className="h-12 w-px bg-gray-300 dark:bg-gray-600" />
                   <div>
-                    <div className="text-3xl text-gray-900 mb-1">98%</div>
-                    <div className="text-sm text-gray-600">Satisfacción</div>
+                    <div className="text-3xl text-gray-900 dark:text-white mb-1">98%</div>
+                    <div className="text-sm text-gray-600 dark:text-gray-400">Satisfacción</div>
                   </div>
                 </div>
                 <div className="flex -space-x-2">
                   {[1, 2, 3, 4, 5].map((i) => (
-                    <div key={i} className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 border-2 border-white" />
+                    <div key={i} className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 border-2 border-white dark:border-gray-800" />
                   ))}
-                  <div className="w-10 h-10 rounded-full bg-gray-200 border-2 border-white flex items-center justify-center text-xs text-gray-600">
+                  <div className="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 border-2 border-white dark:border-gray-800 flex items-center justify-center text-xs text-gray-600 dark:text-gray-400">
                     +5K
                   </div>
                 </div>

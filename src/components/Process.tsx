@@ -29,18 +29,18 @@ const steps = [
 
 export function Process() {
   return (
-    <section className="py-24 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+    <section className="py-24 bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 relative overflow-hidden">
       <div className="absolute inset-0 bg-grid-pattern opacity-5" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-16 animate-fade-in-up">
-          <div className="inline-flex items-center gap-2 bg-blue-100 px-4 py-2 rounded-full mb-4">
-            <span className="text-blue-600">Nuestro Proceso</span>
+          <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 px-4 py-2 rounded-full mb-4">
+            <span className="text-blue-600 dark:text-blue-400">Nuestro Proceso</span>
           </div>
-          <h2 className="text-gray-900 mb-6">
+          <h2 className="text-gray-900 dark:text-white mb-6">
             Cómo Trabajamos Contigo
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             Mi enfoque sistemático y profesional para tu recuperación completa
           </p>
         </div>
